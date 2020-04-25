@@ -1,0 +1,3 @@
+[0328/073702.772:ERROR:file_io_win.cc(179)] CreateFile C:\Program Files (x86)\Google\Chrome\settings.dat: Acesso negado. (0x5)
+[0328/073702.778:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: O pipe foi finalizado. (0x6D)
+[0328/073702.781:ERROR:file_io_win.cc(179)] CreateFile C:\Program Files (x86)\Google\Chrome\settings.dat: Acesso negado. (0x5)
