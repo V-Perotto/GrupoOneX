@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>FaleCom - PUCPR</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <body>
+    <header>
+      <ul>
+        <br>FaleCom<br>
+      </ul>
+    </header>
+<br>
+  <style>
+.dropbtn {
+  background-color: #a31840;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #ad1541;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute-center;
+  background-color: #f1f1f1;
+  min-width: 360px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: relative;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+</head>
+<body>
+  <div align="center">
+    <br><img src="http://www.ggjcwb.com/wp-content/uploads/2015/09/pucpr.jpeg" alt="img logo" style="width:318px;height:158px;"><br>
+<h2>Selecione o curso:</h2>
+<div class=".dropdown">
+  <button onclick="myFunction()" class="dropbtn">Selecione</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="primeiro_periodo.html">1º período</a>
+    <a href="segundo_periodo.html">2º período</a>
+    <a href="terceiro_periodo.html">3º  período</a>
+    <a href="quarto_periodo.html">4º  período</a>
+    <a href="quinto_periodo.html">5º  período</a>
+    <a href="sexto_periodo.html">6º  período</a>
+    <a href="setimo_periodo.html">7º  período</a>
+    <a href="oitavo_periodo.html">8º  período</a>
+    <a href="provas.html">voltar</a>
+  </div>
+</div>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+<br>
+<br>
+  </body>
+  <footer>
+  <br>
+  <p>Por: Grupo 22, Experiência Criativa</p>
+  <p>Escola Politécnica - PUCPR®, 2020</p>
+</footer>
+</head>
