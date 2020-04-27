@@ -12,6 +12,7 @@
             {% else %}
                 <a href="{% url 'login' %}" title="Acessar" class="top-menu"><span class="glyphicon glyphicon-log-in"></span></a>
             {% endif %}
+            <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
             <h1><a href="/">Django Girls Blog</h1>
             <h3><a href="{% static 'home.html' %}" class="top-submenu">Home</a> <span class="top-submenu"> </span> <a href="{% static 'about.html' %}" class="top-submenu">About</a> <span class="top-submenu"> </span> <a href="{% url 'about' %}" class="top-submenu">About Header</a> </h3>
         </div>

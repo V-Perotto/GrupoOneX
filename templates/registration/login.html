@@ -1,0 +1,21 @@
+{% extends  'blog/base.html' %}
+
+{% block title %}Entrar{% endblock %}
+
+{% block content %}
+
+<h2>Acessar área de postagems</h2>
+<div class="row">
+<div class="col-md-5 auth-card">
+
+    <form method="POST" class="post-form">
+        {% csrf_token %}
+        <input type="hidden" name="next" value="{{ next }}">
+
+        {{ form.as_p }}
+
+        <button type="submit" class="save btn btn-default">Entrar</button>
+    </form>
+</div>
+</div>
+{% endblock %}
