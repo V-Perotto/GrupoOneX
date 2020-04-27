@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <div class="page-header">
+            {% if user.is_authenticated %}
+                <a href="{% url 'post_new' %}" title="Postar" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+                <a href="{% url 'logout' %}" title="Sair" class="top-menu"><span class="glyphicon glyphicon-log-out"></span></a>
+            {% else %}
+                <a href="{% url 'login' %}" title="Acessar" class="top-menu"><span class="glyphicon glyphicon-log-in"></span></a>
+            {% endif %}
+            <h1><a href="/">Django Girls Blog</h1>
+            <h3><a href="{% static 'home.html' %}" class="top-submenu">Home</a> <span class="top-submenu"> </span> <a href="{% static 'about.html' %}" class="top-submenu">About</a> <span class="top-submenu"> </span> <a href="{% url 'about' %}" class="top-submenu">About Header</a> </h3>
+        </div>
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                    {% if user.is_authenticated% }
+                            <h2> Olá <b> {{ user.username }} </b>, vamos fazer um post hoje? </h2><br>
+                    {% endif %}
+                    {% block content %}
+                    {% endblock %} 
+                </div>
+            </div> 
+        </div>
+    </body>
+</html>
